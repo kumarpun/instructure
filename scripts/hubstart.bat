@@ -1,0 +1,1 @@
+java -jar src/test/java/resources/drivers/standalone/selenium-server-standalone-3.141.59.jar -role hub -port 5555 &

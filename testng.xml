@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="instances" >
+    <listeners>
+        <listener class-name="com.sevadevelopment.utility.InvokedMethodListener"></listener>
+    </listeners>
+    <test name="Test In Chrome"  thread-count="2">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+	        <class name="com.sevadevelopment.getbridge.tests.TestBridgeTopNavLinks"/>
+            <!-- <class name="com.sevadevelopment.getbridge.tests.TestBridgeFooterLinks"/>
+            <class name="com.sevadevelopment.getbridge.tests.TestRequestDemoForm"/>
+            <class name="com.sevadevelopment.getbridge.tests.TestVideoPlayerDemo"/> -->
+        </classes>
+    </test>
+<!--     <test name="Test In Firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+	    <class name="com.sevadevelopment.getbridge.tests.TestBridgeTopNavLinks"/>
+            <class name="com.sevadevelopment.getbridge.tests.TestBridgeFooterLinks"/>
+            <class name="com.sevadevelopment.getbridge.tests.TestRequestDemoForm"/>
+            <class name="com.sevadevelopment.getbridge.tests.TestVideoPlayerDemo"/>
+        </classes>
+    </test> -->
+</suite>

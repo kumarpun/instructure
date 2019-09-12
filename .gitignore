@@ -1,0 +1,11 @@
+/target/
+.idea
+.iml
+target
+.classpath
+.settings
+.project
+bin
+test-output
+src/test/resources/extentReport.html
+
